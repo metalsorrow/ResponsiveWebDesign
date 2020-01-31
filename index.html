@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Umbral Automotora</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container_header">
+            <div class="container_logo">
+                <img class="logo" src="./src/Sin título.png" alt="icon">
+                <h2>Umbral Automotora</h2>
+            </div>
+            <div class="burguer" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu off">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Catalogo</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Quienes Somos</a></li>
+                <li><a href="#"> <span>Cotizar</span></a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <div class="slider-wrapper">
+            <div class="slider">
+              <input type="radio" name="slider" class="trigger" id="one" checked="checked" />
+              <div class="slide">
+                <figure class="slide-figure">
+                  <img class="slide-img" src="src/banner1.jpg" />
+                  <figcaption class="slide-caption"><p>...</p></figcaption>
+                </figure><!-- .slide-figure -->
+              </div><!-- .slide -->
+              <input type="radio" name="slider" class="trigger" id="two" />
+              <div class="slide">
+                <figure class="slide-figure">
+                  <img class="slide-img" src="src/banner2.jpg" />
+                  <figcaption class="slide-caption"><p>...</p></figcaption>
+                </figure><!-- .slide-figure -->
+              </div><!-- .slide -->
+              <input type="radio" name="slider" class="trigger" id="three" />
+              <div class="slide">
+                <figure class="slide-figure">
+                  <img class="slide-img" src="src/banner3.jpg" />
+                  <figcaption class="slide-caption"><p>...</p></figcaption>
+                </figure><!-- .slide-figure -->
+              </div><!-- .slide -->
+            </div><!-- .slider -->
+            <ul class="slider-nav">
+              <li class="slider-nav__item"><label class="slider-nav__label" for="one"></label></li>
+              <li class="slider-nav__item"><label class="slider-nav__label" for="two"></label></li>
+              <li class="slider-nav__item"><label class="slider-nav__label" for="three"></label></li>
+            </ul><!-- .slider-nav -->
+        </div>
+        <!-- .slider-wrapper -->
+
+        <!--         
+        <section class="banner">
+            <img src="src/banner.jpg" alt="">
+        </section>
+        -->
+    </main>
+
+    <section class="resume">
+        <div class="header_resume">
+            <h2>Nuevas Ofertas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta ipsa architecto recusandae cupiditate accusantium maxime odit perferendis expedita ipsam.</p>
+            <div class="marcas">
+                <img src="src/Autos Catalogo/hyundai.png" alt="">
+                <img src="src/Autos Catalogo/chery.jpg" alt="">
+                <img src="src/Autos Catalogo/honda.png" alt="">
+                <img src="src/Autos Catalogo/marca1.png" alt="">
+                <img src="src/Autos Catalogo/marca1.png" alt="">
+            </div>
+        </div>
+
+        <div class="products">
+         
+            <article class="card_container ">
+                <div class="card">
+                    <img src="src/Autos Catalogo/1.jpg" alt="auto1">
+                    <div class="description">
+                        <h5>Hyundai</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum excepturi quae illum quia non. Quis non cupiditate cumque ullam iste!</p>
+                        <p><span>$9.000.000</span></p>
+                    </div>
+                    <div class="btns">
+                        <a href="#" class="btn btn__cotizar">Cotizar</a>
+                        <a href="#" class="btn btn__detalle">Detalle</a>
+                    </div>
+                </div>
+            </article>
+           
+
+           
+
+
+        </div>
+    </section>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+            let menu = document.querySelector(".menu");
+            menu.classList.toggle("off")
+
+        }
+    </script>
+</body>
+
+</html>
