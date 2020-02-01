@@ -6,6 +6,22 @@
     padding: 0;
 }
 
+h1{
+  font-size: 1em;
+}
+h2{
+  font-size: 3em;
+}
+h3{
+  font-size: 2em;
+}
+h4{
+  font-size: 1.5em;
+}
+h5{
+  font-size: 1em;
+}
+
 nav {
     width: 100%;
 }
@@ -17,20 +33,12 @@ img {
     height: 100%;
 }
 
-nav span{
-    color: #593616;
-    font-weight: 700;
-}
 
-ul,li,a {
-  text-decoration: none;
-  list-style: none;
-  color: black;
-}
 /* ============================================== */
 /* Start Utility */
 /* ============================================== */
 .btns{
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -61,11 +69,12 @@ ul,li,a {
 /* ============================================== */
 #header {
     display: flex;
+    background-color: white;
     width: 100%;
     align-items: center;
     padding: 0 2vw;
     box-shadow: 0 0 8px -1px black;
-}
+  }
 
 .container_logo{
     display: flex;
@@ -76,6 +85,17 @@ ul,li,a {
     display: flex;
     width: 100%;
     align-items: center;
+}
+
+menu, li,a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+.menu span{
+  color: #593616;
+  font-weight: 700;
 }
 
 .logo{
@@ -301,6 +321,8 @@ img {
 /* Start Ofertas */
 /* ============================================== */
 
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1) ; }
 
 .header_resume{
   padding: 10vh 0;
@@ -316,8 +338,7 @@ img {
   flex-wrap: wrap;
 }
 .header_resume .marcas img{
-  height: 10vh;
-  width: 10vw;
+  max-width: 500px;
 }
 .products{
   display: grid;
@@ -327,6 +348,10 @@ img {
   margin: 0 auto;
   padding: 1em;
   gap: 1rem;
+}
+.description{
+  display: flex;
+  flex-direction: column;
 }
 .card_container{
   height: 70vh;
@@ -340,6 +365,7 @@ img {
   transition: 0.3s;
   padding: 2vh 2vw;
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
 }
@@ -353,7 +379,7 @@ img {
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
 }
 
 .card h5::first-line{
@@ -361,13 +387,59 @@ img {
   border-bottom: 0.1em solid black;
 }
 .card span{
-  display: block;
-  text-align: end;
   font-weight: bold;
+}
+.card span:last-of-type{
+  line-height: 3vh;
 }
 
 
 
 /* ============================================== */
 /* End Ofertas */
+/* ============================================== */
+
+
+/* ============================================== */
+/* Start Footer */
+/* ============================================== */
+
+#grid-container {
+  padding: 3vh 0 0 0;
+  display: grid;
+  color: white;
+  background-color: black;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.5fr;
+  justify-content: center;
+  text-align: center;
+  grid-template-areas: "nav info ubicacion" "nav info ubicacion" "derechos derechos derechos";
+}
+.footer__menu ul li a{
+  color: white;
+}
+.map iframe{
+  height: 100%;
+  width: 80%;
+}
+
+.footer__menu { grid-area: nav; }
+
+.footer__info { grid-area: info; }
+
+.footer__ubicacion { grid-area: ubicacion; }
+
+.footer__derechos { grid-area: derechos; }
+
+@media (max-width:768px){
+  #grid-container{
+    background-color: black;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr 0.5fr;
+    grid-template-areas: "nav" "info" "ubicacion" "derechos";
+  }
+}
+
+/* ============================================== */
+/* End Footer */
 /* ============================================== */
