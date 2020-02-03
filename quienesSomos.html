@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <script src="https://kit.fontawesome.com/d774cc4f9c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/quienesSomos.css">
+
+    <title>Umbral Automotora</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container_header">
+            <div class="container_logo">
+                <img class="logo" src="./src/Sin título.png" alt="icon">
+                <h5>Automotora Umbral</h5>
+            </div>
+            <div class="burguer" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu off">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="quienesSomos.html">Quienes Somos</a></li>
+                <li><a href="cotizar.html"> <span>Cotizar</span></a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="resume">
+            <div class="header_resume">
+                <h4>Bienvenidos a</h4>
+                <h1>Automotora Umbral</h1>
+            </div>
+            <div class="resume_info">
+                <div class="info">
+                    <h2 class="text_center">Conócenos</h2>
+                    <p>Hoy contamos con la más moderna infraestructura emplazada en más de 17.000 m2 totales donde encontraras el servicio técnico del más alto estándar con canales y tecnología de vanguardia.</p>
+                    <p>Umbral se conforma de una zona exclusiva de seminuevos y 3 grandes showrooms independientes por cada marca: Volkswagen, Audi y Skoda, con diseños exclusivos digno de nuestra casa matriz, hasta en el más mínimo detalle.</p>
+                    <p>Contamos con amplios estacionamientos para clientes y un grupo de profesionales expertos para asesorarte en todo lo que necesites.</p>    
+                </div>
+
+                <div class="icons">
+                    <a href="cotizar.html" class="icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p class="bold">Cotizar</p>
+                    </a>
+                    <a href="catalogo   .html" class="icon">
+                        <i class="fas fa-car"></i>
+                        <p class="bold">Catalogo</p>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="grid-container">
+        <div class="footer__menu">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="quienesSomos.html">Quienes Somos</a></li>
+                <li><a href="cotizar.html"> <span>Cotizar</span></a></li>
+            </ul>
+        </div>
+        <div class="footer__info">
+            <h3>Automotora Umbral</h3>
+            <p>Casa matriz</p>
+            <p>Av. Miguel Claro #123, Providencia</p>
+            <p>Contacto@umbral.cl</p>
+            <p>+569 27354916</p>
+            <div class="social">
+                <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer__ubicacion">
+            <h3>Ubicacion</h3>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.264232401648!2d-70.65756878509177!3d-33.44242180448576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a6690850a3%3A0x8579aa62537fc97!2sMoneda%201342%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1580512253985!5m2!1ses!2scl"
+                    frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+        <div class="footer__derechos">
+            <p>Automotora Umbral. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+            let menu = document.querySelector(".menu");
+            menu.classList.toggle("off")
+
+        }
+    </script>
+
+</body>
+
+</html>

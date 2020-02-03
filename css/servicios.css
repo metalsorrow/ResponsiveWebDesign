@@ -188,130 +188,66 @@ menu, li,a {
 /* Start Banner */
 /* ============================================== */
 
-img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.trigger {
-  display: none;
-}
-
-.slider, .slider-wrapper {
-  position: relative;
-  height: 250px;
-}
-
-.slide {
-  background-color: black;
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 5000;
-  opacity: 0;
-  transition: opacity .5s ease-in-out;
-}
-
-.slide-img {
-  filter: brightness(80%);
-  height: 100%;
-  object-fit: scale-down;
-  display: block;
-  margin: 0 auto;
-}
-
-.slide-figure {
-  height: 100%;
-  position: relative;
-  margin: 0;
-}
-
-.slide-caption {
-  position: absolute;
-  bottom: 30%;
-  width: calc(100% - 1rem);
-  color: white;
-  text-align: center;
-  left: 50%;
-}
-
-.trigger:checked + .slide {
-  z-index: 6000;
-  opacity: 1;
-}
-
-.slider-nav {
-  width: 100%;
-  text-align: center;
-  margin: 1rem 0;
-}
-
-.slider-nav__item {
-  display: inline-block;
-}
-
-.slider-nav__label {
-  font-size: 13px;
-  background-color: #333;
-  display: block;
-  height: 2em;
-  line-height: 2em;
-  width: 2em;
-  text-align: center;
-  border-radius: 50%;
-  color: white;
-  cursor: pointer;
-  transition: background-color .25s, color .25s ease-in-out;
-}
-
-.slider-nav__label:hover,
-.slider-nav__label:active,
-.slider-nav__label:focus {
-  background-color: gray;
-  color: black;
-}
-
-@media only screen and (min-width: 1024px) {
-  .slider, .slider-wrapper {
-    height: 80vh;
+.header_resume{
+    box-shadow: 0 0 8px black;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.72);
+    background: linear-gradient(to right, rgba(0,0,0,0.5)20%,rgba(0,0,0,0.4)50%, rgba(0,0,0,0.5)80%), url(../src/servicios/ServiciosBanner.jpg);
+    background-size: cover ;
+    background-position: center;
   }
-
-  .slide-caption {
-    width: 65%;
-    font-size: 1.5rem;
+  
+  .resume_info{
+      margin-bottom: 10vh;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
   }
-}
-
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-  .slider, .slider-wrapper {
-    height: 40vh;
+  .info{
+      height: 70vh;
+      padding: 0 5vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: justify;
   }
-
-  .slide-caption {
-    width: 100%;
-    font-size: 1.25rem;
+  
+  .icons{
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
   }
-}
-
-@media only screen and (min-width: 768px) {
-  .slide-img {
-    width: 100%;
-    height: auto;
+  
+  .icons .icon{
+      transition: color 0.3s ;
   }
-}
-.slide {
-  position: absolute;
-  z-index: 5000;
-  opacity: 0;
-  transition: opacity .5s ease-in-out;
-}
-.trigger:checked + .slide {
-  z-index: 6000;
-  opacity: 1;
-}
+  .icons .icon:hover{
+      color:rgb(59, 94, 163) ;
+  }
+  
+  .icon i{
+      margin-bottom: 1rem;
+      font-size: 3em ;
+  }
+  
+  @media (max-width:768px){
+      h1{
+          font-size: 3rem;
+      }
+      h4{
+          font-size: 1rem;
+      }
+  }
+  
+  
+
 /* ============================================== */
 /* End Banner */
 /* ============================================== */
@@ -324,14 +260,6 @@ img {
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1) ; }
 
-.header_resume{
-  padding: 10vh 0;
-  margin: 20vh 0 10vh 0;
-  background-color: rgba(0,0,0,0.2);
-  box-shadow: 0 0 8px black;
-  text-align: center;
-  line-height: 3em;
-}
 .header_resume .marcas{
   display: flex;
   justify-content: space-evenly;
@@ -423,6 +351,14 @@ img {
   width: 80%;
 }
 
+.footer__menu { grid-area: nav; }
+
+.footer__info { grid-area: info; }
+
+.footer__ubicacion { grid-area: ubicacion; }
+
+.footer__derechos { grid-area: derechos; }
+
 .social{
   margin: 0 auto;
 }
@@ -432,15 +368,6 @@ img {
   color: white;
   margin: 2vh 1vw;
 }
-
-
-.footer__menu { grid-area: nav; }
-
-.footer__info { grid-area: info; }
-
-.footer__ubicacion { grid-area: ubicacion; }
-
-.footer__derechos { grid-area: derechos; }
 
 @media (max-width:768px){
   #grid-container{

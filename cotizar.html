@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cotizar.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container_header">
+            <div class="container_logo">
+                <img class="logo" src="./src/Sin título.png" alt="icon">
+                <h1>Automotora Umbral</h1>
+            </div>
+            <div class="burguer" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu off">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="quienesSomos.html">Quienes Somos</a></li>
+                <li><a href="cotizar.html"> <span>Cotizar</span></a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <article class="caja">
+        <div class="Contacto">
+
+            <div id="formulario">
+                <div id="letra">
+                    <h1>CONTACTO</h1>
+                </div>
+                <form name="form_inscription"  action="404.html">
+                    <div class="cajas1">
+                        <div class="caja1">
+                            <label>NOMBRE</label> <br>
+                            <!--Etiqueta del input-->
+                            <input type="text" class="campo" name="nombre" id="nombre" required="required"
+                                placeholder="Nombre completo"><br><br>
+
+                            <label>TELÉFONO</label> <br>
+                            <input type="text" class="campo" name="telefono" id="telefono" required="required"
+                                placeholder="Teléfono"></div>
+
+                        <div class="caja2">
+                            <label>R U T</label> <br>
+                            <input type="text" class="campo" name="RUT" id="RUT" required="required"
+                                placeholder="RUT"><br><br>
+
+                            <label>CIUDAD</label> <br>
+                            <input type="text" class="campo" name="ciudad" id="ciudad" required="required"
+                                placeholder="Ciudad"></div>
+
+                        <div class="caja3">
+                            <label>EMAIL</label> <br>
+                            <input type="email" class="campo" name="email" id="email" required="required"
+                                placeholder="Email"><br><br>
+
+                            <label>MARCA</label> <br>
+                            <input type="text" class="campo" name="asunto" id="asunto" required="required"
+                                placeholder="Marcas"></div>
+                    </div>
+                    <div class="cajas2">
+                        <div class="caja4">
+                            <label for="mensaje">DETALLE</label><br>
+                            <textarea name="mensaje" id="mensaje" class="campo" max cols="30" rows="10" maxlength="100"
+                                required="required" placeholder="Ingrese mensaje"></textarea></div><br>
+                        <div class="caja5">
+                            <input type="submit" id="enviar" class="boton" value="COTIZAR"></div>
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+        <div class="limpiar"></div>
+
+    </article>
+
+    <div class="products">
+
+        <article class="card_container ">
+            <div class="card">
+                <img src="src/Autos Catalogo/1.jpg" alt="auto1">
+                <h5>Hyundai</h5>
+                <div class="description">
+                    <p><span>Modelo:</span> lorem</p>
+                    <p><span>Año:</span> 999</p>
+                    <p><span>Transmicion:</span> lorem</p>
+                    <p><span>Combustible:</span> 87</p>
+                    <p><span>$9.000.000</span></p>
+                </div>
+                <div class="btns">
+                    <a href="#" class="btn btn__cotizar grow">Cotizar</a>
+                    <a href="#" class="btn btn__detalle grow">Detalle</a>
+                </div>
+            </div>
+        </article>
+        <article class="card_container ">
+            <div class="card">
+                <img src="src/Autos Catalogo/2.jpg" alt="auto1">
+                <h5>Hyundai</h5>
+                <div class="description">
+                    <p><span>Modelo:</span> lorem</p>
+                    <p><span>Año:</span> 999</p>
+                    <p><span>Transmicion:</span> lorem</p>
+                    <p><span>Combustible:</span> 87</p>
+                    <p><span>$9.000.000</span></p>
+                </div>
+                <div class="btns">
+                    <a href="#" class="btn btn__cotizar grow">Cotizar</a>
+                    <a href="#" class="btn btn__detalle grow">Detalle</a>
+                </div>
+            </div>
+        </article>
+        <article class="card_container ">
+            <div class="card">
+                <img src="src/Autos Catalogo/2.jpg" alt="auto1">
+                <h5>Hyundai</h5>
+                <div class="description">
+                    <p><span>Modelo:</span> lorem</p>
+                    <p><span>Año:</span> 999</p>
+                    <p><span>Transmicion:</span> lorem</p>
+                    <p><span>Combustible:</span> 87</p>
+                    <p><span>$9.000.000</span></p>
+                </div>
+                <div class="btns">
+                    <a href="#" class="btn btn__cotizar grow">Cotizar</a>
+                    <a href="#" class="btn btn__detalle grow">Detalle</a>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer id="grid-container">
+        <div class="footer__menu">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="quienesSomos.html">Quienes Somos</a></li>
+                <li><a href="cotizar.html"> <span>Cotizar</span></a></li>
+            </ul>
+        </div>
+        <div class="footer__info">
+            <h3>Automotora Umbral</h3>
+            <p>Casa matriz</p>
+            <p>Av. Miguel Claro #123, Providencia</p>
+            <p>Contacto@umbral.cl</p>
+            <p>+569 27354916</p>
+        </div>
+        <div class="footer__ubicacion">
+            <h3>Ubicacion</h3>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.264232401648!2d-70.65756878509177!3d-33.44242180448576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a6690850a3%3A0x8579aa62537fc97!2sMoneda%201342%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1580512253985!5m2!1ses!2scl"
+                    frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+        <div class="footer__derechos">
+            <p>Automotora Umbral. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+            let menu = document.querySelector(".menu");
+            menu.classList.toggle("off")
+    
+        }
+    </script>
+</body>
+
+</html>

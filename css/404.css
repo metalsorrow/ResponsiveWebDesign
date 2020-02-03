@@ -1,0 +1,26 @@
+.container{
+    background: rgb(255, 255, 255);
+    /*width: 100%;
+    height: 100%;*/
+}
+.notfound{
+    margin: 0 auto;
+    width: 35%;
+}
+#imagen{
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+}
+#imagen img{
+    width: 70%;
+}
+#text h3{
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#text p{
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: black solid 2px 0;
+}
